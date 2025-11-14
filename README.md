@@ -20,7 +20,7 @@ Stay updated with my professional journey on <a href="www.linkedin.com/in/rose-i
 
 <h3>😜 Fun Facts about me</h3>
   <ul>
-  <li>I am currently learning 3 languages (Mandarin, German, Arabic).</li>
+  <li>I am currently learning 2 languages (Mandarin and German).</li>
   <li>I would love to one day experience the life of a Digital Nomad in either South Korea or Vietnam.</li>
   <li>I love visiting new coffee shops.</li>
 </ul>
