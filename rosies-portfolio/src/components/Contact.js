@@ -1,17 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact.svg";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import { Container } from "react-bootstrap";
 
-// npm i @emailjs/browser
 export const Contact = () => {
   const form = useRef();
+  const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setStatus("sending");
 
     emailjs
       .sendForm(
@@ -21,66 +18,65 @@ export const Contact = () => {
         "SVRmxUfXztTjKU5WW"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-
+        () => {
+          setStatus("success");
           form.current.reset();
-
-        // Display a success message
-        alert("Email sent successfully!");
         },
-        (error) => {
-          console.log(error.text);
-          // Display an error message
-          alert("Failed to send email. Please try again later.");
+        () => {
+          setStatus("error");
         }
       );
   };
 
-  
-
   return (
     <section className="contact" id="connect">
-      <Container>
-       <Row className="align-items-center">
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
-              }
-            </TrackVisibility>
-          </Col>
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                
-            <form ref={form} onSubmit={sendEmail}>
+      <Container className="contact-container">
+        <h2 className="section-title">Get in touch</h2>
 
-            <Col size={12} sm={6} className="px-1">
-            <h2>Get In Touch</h2>
-              <label>Name</label>
-              <input type="text" name="user_name" />
-            </Col>
+        <p className="contact-intro">
+          You are welcome to reach out, whether you have a question, an opportunity,
+          or just want to say hi. <br/> I’ll do my best to get back to you✨.
+        </p>
 
-            <Col size={12} sm={6} className="px-1">
-              <label>Email</label>
-              <input type="email" name="user_email" />
-            </Col>
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your name"
+            required
+          />
 
-            <Col size={12} sm={6} className="px-1">
-              <label>Message</label>
-              <textarea name="message" />
-              <input type="submit" value="Send" />
-            </Col>
-              </form>
-              </div>}
-            </TrackVisibility>
-          </Col>
-            </Row>
-            </Container>
-          </section>
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your email"
+            required
+          />
 
+          <textarea
+            name="message"
+            placeholder="Your message"
+            rows="5"
+            required
+          />
+
+          <button type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send message"}
+          </button>
+
+          {status === "success" && (
+            <p className="contact-status success">
+              Thanks for reaching out — I’ll be in touch soon ✨
+            </p>
+          )}
+
+          {status === "error" && (
+            <p className="contact-status error">
+              Something went wrong. Please try again later.
+            </p>
+          )}
+        </form>
+      </Container>
+    </section>
   );
 };

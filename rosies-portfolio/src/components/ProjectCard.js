@@ -1,27 +1,26 @@
-import {Col} from "react-bootstrap";
-import {ArrowRightCircle} from "react-bootstrap-icons";
-import {Link} from 'react-router-dom';
+import { Col } from "react-bootstrap";
 
+export const ProjectCard = ({ title, description, imgUrl, linkUrl }) => {
+  return (
+    <Col md={6} className="project-card">
+      <a
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-card-link"
+      >
+        <div className="project-card-inner">
+          <div className="project-image">
+            <img src={imgUrl} alt={title} />
+          </div>
 
-export const ProjectCard = ({title,description,imgUrl,linkUrl}) =>{
-    
-
-    return(
-        <Col sm={6} md={4} >
-            
-            <div className="proj-imgbx">
-            <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-                <img src={imgUrl} onClick={linkUrl}/>
-            </a>
-            <div className="proj-txt">
-                <h4>{title}</h4>
-                <span>{description}</span>
-               
-            </div>
-            </div>
-            <span> <button className="arrow"  onClick={() => console.log('connect')}><a href={linkUrl}><ArrowRightCircle size={25}/></a></button></span>
-
-        </Col>
-    )
-
-}
+          <div className="project-content">
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <span className="project-cta">View project →</span>
+          </div>
+        </div>
+      </a>
+    </Col>
+  );
+};
