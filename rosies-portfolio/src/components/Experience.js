@@ -12,7 +12,7 @@ export const Experience = () => {
             <h4>Anglo American</h4>
             <h5 className="experience-role">Software Developer</h5>
             <p className="experience-location">South Africa</p>
-            <span className="experience-date">2023 — Present</span>
+            <span className="experience-date">2024 — Present</span>
           </Col>
 
           <Col md={8} className="experience-right">
@@ -49,10 +49,10 @@ export const Experience = () => {
         {/* ===== Moyo ===== */}
         <Row className="experience-item">
           <Col md={4} className="experience-left">
-            <h4>Anglo American</h4>
+            <h4>Moyo</h4>
             <h5 className="experience-role">Junior Consultant (Software Development)</h5>
             <p className="experience-location">South Africa</p>
-            <span className="experience-date">2023 — Present</span>
+            <span className="experience-date">2024 — Present</span>
           </Col>
 
           <Col md={8} className="experience-right">

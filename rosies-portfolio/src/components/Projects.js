@@ -15,24 +15,24 @@ export const  Projects = () =>{
 
     /*Array to call all my projects*/
     const projects = [
-        {
-          title: "Happy Feast Website, POS & Inventory",
-          description: "Design & Development",
-          imgUrl: projImg1,
-          linkUrl: "https://www.youtube.com/watch?v=mLOmuH0Pcbo",
-        },
-        {
-          title: "BMW ITHub Supercar Analysis Project",
-          description: "Data Analysis",
-          imgUrl: projImg2,
-          linkUrl: "https://drive.google.com/file/d/14WZlbl5nP4nwy7aGxWPqkaWBMLIC7V-a/view?usp=sharing",
-        },
-        {
-          title: "Level UP Startup",
-          description: "Design",
-          imgUrl: projImg3,
-          linkUrl: "https://www.figma.com/proto/LA1q3i6sGamepjv6rp3iuz/Level-Up-Wireframes?node-id=33%3A1527&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=33%3A1527",
-        },
+        // {
+        //   title: "Happy Feast Website, POS & Inventory",
+        //   description: "Design & Development",
+        //   imgUrl: projImg1,
+        //   linkUrl: "https://www.youtube.com/watch?v=mLOmuH0Pcbo",
+        // },
+        // {
+        //   title: "BMW ITHub Supercar Analysis Project",
+        //   description: "Data Analysis",
+        //   imgUrl: projImg2,
+        //   linkUrl: "https://drive.google.com/file/d/14WZlbl5nP4nwy7aGxWPqkaWBMLIC7V-a/view?usp=sharing",
+        // },
+        // {
+        //   title: "Level UP Startup",
+        //   description: "Design",
+        //   imgUrl: projImg3,
+        //   linkUrl: "https://www.figma.com/proto/LA1q3i6sGamepjv6rp3iuz/Level-Up-Wireframes?node-id=33%3A1527&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=33%3A1527",
+        // },
         {
           title: "Pacman",
           description: "Development",
