@@ -548,7 +548,7 @@ z-index: -4;
 
 .project-image img {
   width: 140px;
-  height: auto;
+  height: 100px;
   border-radius: 10px;
 }
 

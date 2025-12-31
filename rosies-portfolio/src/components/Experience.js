@@ -6,64 +6,23 @@ export const Experience = () => {
       <Container>
         <h2 className="section-title">Where I’ve worked</h2>
 
-        {/* ===== Anglo American ===== */}
-        <Row className="experience-item">
-          <Col md={4} className="experience-left">
-            <h4>Anglo American</h4>
-            <h5 className="experience-role">Software Developer</h5>
-            <p className="experience-location">South Africa</p>
-            <span className="experience-date">2024 — Present</span>
-          </Col>
-
-          <Col md={8} className="experience-right">
-            <ul>
-              <li>
-                Built and maintained internal web applications using
-                <strong> ASP.NET Core, JavaScript, and SQL</strong>.
-              </li>
-              <li>
-                Worked on risk-management and compliance systems used across
-                multiple business units.
-              </li>
-              <li>
-                Integrated frontend interfaces with backend APIs and Azure
-                Logic Apps.
-              </li>
-              <li>
-                Collaborated in Agile teams and participated in code reviews
-                and production deployments.
-              </li>
-            </ul>
-
-            <div className="experience-tech">
-              <span className="tech-pill">JavaScript</span>
-              <span className="tech-pill">Azure Logic Apps</span>
-              <span className="tech-pill">Html & Css </span>
-              <span className="tech-pill">ASP.NET Core</span>
-              <span className="tech-pill">SQL</span>
-            </div>
-
-          </Col>
-        </Row> <br/>
-
         {/* ===== Moyo ===== */}
         <Row className="experience-item">
           <Col md={4} className="experience-left">
             <h4>Moyo</h4>
             <h5 className="experience-role">Junior Consultant (Software Development)</h5>
             <p className="experience-location">South Africa</p>
-            <span className="experience-date">2024 — Present</span>
+            <span className="experience-date">Feb 2024 — Present</span>
           </Col>
 
           <Col md={8} className="experience-right">
             <ul>
               <li>
-                Built and maintained internal web applications using
-                <strong> ASP.NET Core, JavaScript, and SQL</strong>.
+                I was involved in digitizing the TSRB application process at Anglo American. I created a chat system within each section of the web application to facilitate leaving comments during the review process. 
+                I utilized my .Net, Sql, Azure Logic Apps, and Javascript (Ajax, jQuery) skills to improve functionality and user experience.
               </li>
               <li>
-                Worked on risk-management and compliance systems used across
-                multiple business units.
+                Rose's responsibilities on the Anglo American UAM team focused on full-stack development.She was responsible for building a global search system, ensuring that bulk upload requestswere possible on the system, as well as other access-related tasks.
               </li>
               <li>
                 Integrated frontend interfaces with backend APIs and Azure
