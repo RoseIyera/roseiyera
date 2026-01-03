@@ -22,7 +22,7 @@ export const Experience = () => {
                 I utilized my .Net, Sql, Azure Logic Apps, and Javascript (Ajax, jQuery) skills to improve functionality and user experience.
               </li>
               <li>
-                Rose's responsibilities on the Anglo American UAM team focused on full-stack development.She was responsible for building a global search system, ensuring that bulk upload requestswere possible on the system, as well as other access-related tasks.
+                My responsibilities on the Anglo American UAM team focused on full-stack development. I was responsible for building a global search system, ensuring that bulk upload requestswere possible on the system, as well as other access-related tasks.
               </li>
               <li>
                 Integrated frontend interfaces with backend APIs and Azure
@@ -57,8 +57,7 @@ export const Experience = () => {
           <Col md={8} className="experience-right">
             <ul>
               <li>
-                Developed features using <strong>C# and JavaScript</strong> in
-                a production environment.
+                Developed Frontend UI features for an <strong>Outsystems project and for an Ionic and TypeScript mobile application</strong>.
               </li>
               <li>
                 Assisted in debugging, testing, and improving existing
@@ -72,6 +71,7 @@ export const Experience = () => {
 
             <div className="experience-tech">
               <span className="tech-pill">C#</span>
+              <span className="tech-pill">Typescript</span>
               <span className="tech-pill">JavaScript</span>
               <span className="tech-pill">.NET</span>
               <span className="tech-pill">Outsystems</span>
