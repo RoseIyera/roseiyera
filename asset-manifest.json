@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/roseiyera/static/css/main.d0616d51.css",
-    "main.js": "/roseiyera/static/js/main.b37461a8.js",
+    "main.js": "/roseiyera/static/js/main.87897839.js",
     "static/js/787.da340fe9.chunk.js": "/roseiyera/static/js/787.da340fe9.chunk.js",
     "static/media/header-img.svg": "/roseiyera/static/media/header-img.b4f1c62e3c8906ab71bdd810c16300f0.svg",
     "static/media/banner-bg.png": "/roseiyera/static/media/banner-bg.7ad2a686bcae787c79fb.png",
@@ -26,11 +26,11 @@
     "index.html": "/roseiyera/index.html",
     "static/media/nav-icon1.svg": "/roseiyera/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.d0616d51.css.map": "/roseiyera/static/css/main.d0616d51.css.map",
-    "main.b37461a8.js.map": "/roseiyera/static/js/main.b37461a8.js.map",
+    "main.87897839.js.map": "/roseiyera/static/js/main.87897839.js.map",
     "787.da340fe9.chunk.js.map": "/roseiyera/static/js/787.da340fe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0616d51.css",
-    "static/js/main.b37461a8.js"
+    "static/js/main.87897839.js"
   ]
 }
